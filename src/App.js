@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+// Compatibility with older versions of React
+import React from "react";
+import DateInput from "./components/DateInput";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      <header>
+        <h1>Social Sync challenge</h1>
       </header>
-    </div>
+      <main>
+        <div className="container">
+          <h1>Each day comes with a pleasant surprise.</h1>
+          <DateInput />
+        </div>
+      </main>
+    </React.Fragment>
   );
 }
 
