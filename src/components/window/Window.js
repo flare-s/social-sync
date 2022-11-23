@@ -1,20 +1,30 @@
-import React, { useState } from "react";
 import windowStyles from "./Window.module.scss";
 
-const Window = ({ window }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsOpen((prevState) => !prevState);
+const Window = ({ windowObj, setWindows }) => {
+  const handleClick = (id) => {
+    setWindows((prevState) => {
+      const newWindows = prevState.map((window) => {
+        return window.id === id
+          ? {
+              ...window,
+              open: !window.open,
+            }
+          : window;
+      });
+      localStorage.setItem("windows", JSON.stringify(newWindows));
+      return newWindows;
+    });
   };
 
   return (
     <li
-      className={`${windowStyles.window} ${isOpen ? windowStyles.active : ""}`}
-      onClick={handleClick}
+      className={`${windowStyles.window} ${
+        windowObj.open ? windowStyles.active : ""
+      }`}
+      onClick={() => handleClick(windowObj.id)}
     >
-      <div>{window.day}</div>
-      <div>{window.text}</div>
+      <div>{windowObj.day}</div>
+      <div>{windowObj.text}</div>
     </li>
   );
 };
