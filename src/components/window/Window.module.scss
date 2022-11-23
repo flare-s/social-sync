@@ -1,0 +1,7 @@
+.window {
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &.active {
+    background-color: rgba(32, 84, 139, 0.5);
+  }
+}

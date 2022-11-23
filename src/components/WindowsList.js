@@ -1,14 +1,12 @@
 import React from "react";
 import windowsArray from "../data";
+import Window from "./window/Window";
 
 const WindowsList = () => {
   return (
     <ul className="grid">
       {windowsArray.map((window) => (
-        <li key={window.id}>
-          <div>{window.day}</div>
-          <div>{window.text}</div>
-        </li>
+        <Window key={window.id} window={window} />
       ))}
     </ul>
   );
