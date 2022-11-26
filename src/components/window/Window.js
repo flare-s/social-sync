@@ -17,7 +17,6 @@ const Window = ({ windowObj, setWindows, selectedDayDate }) => {
       return newWindows;
     });
   };
-  console.log(selectedDayDate);
   return (
     <li
       className={`${windowStyles.window} ${
@@ -35,7 +34,14 @@ const Window = ({ windowObj, setWindows, selectedDayDate }) => {
       <div className={windowStyles.day}>
         <span>{windowObj.day}</span>
       </div>
-      <div>{windowObj.text}</div>
+      <div>
+        {windowObj.type === "image" && <img src={windowObj.source} alt="" />}
+        {windowObj.type === "video" && (
+          <video src={windowObj.source} width="100%" controls>
+            sorry, your browser doesn't support embedded video
+          </video>
+        )}
+      </div>
     </li>
   );
 };

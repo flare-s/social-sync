@@ -13,6 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: visible;
+    z-index: 2;
+    opacity: 1;
+    transition: all, 0.3s linear, 0.5s;
 
     &::after {
       content: "";
@@ -44,6 +48,8 @@
 
 .active {
   .day {
+    visibility: hidden;
+    opacity: 0;
     &::after {
       transform: translateX(-110%) rotate(-20deg);
     }
