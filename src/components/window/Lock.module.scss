@@ -1,5 +1,6 @@
 .container {
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,13 +12,14 @@
 }
 
 .lock {
-  background: gray;
+  background-color: gray;
   border-radius: 3px;
   width: 25px;
   height: 20px;
-  //   margin-top: 60px;
-  //   margin-left: 60px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::before {
     content: "";

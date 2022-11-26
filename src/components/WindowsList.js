@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import windowsArray from "../data";
 import Window from "./window/Window";
 
-const WindowsList = () => {
+const WindowsList = ({ selectedDayDate }) => {
   const [windows, setWindows] = useState(windowsArray);
 
   useEffect(() => {
@@ -17,7 +17,12 @@ const WindowsList = () => {
   return (
     <ul className="grid">
       {windows.map((window) => (
-        <Window key={window.id} windowObj={window} setWindows={setWindows} />
+        <Window
+          key={window.id}
+          windowObj={window}
+          setWindows={setWindows}
+          selectedDayDate={selectedDayDate}
+        />
       ))}
     </ul>
   );

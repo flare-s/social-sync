@@ -37,13 +37,12 @@
   }
 
   span {
-    z-index: 5;
+    position: relative;
+    z-index: 2;
   }
 }
 
 .active {
-  background-color: rgba(32, 84, 139, 0.5);
-
   .day {
     &::after {
       transform: translateX(-110%) rotate(-20deg);
