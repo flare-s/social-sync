@@ -18,7 +18,6 @@ function App() {
       </header>
       <main>
         <div className="container">
-          <h1>Each day comes with a pleasant surprise.</h1>
           <DateInput inputRef={dateInput} handleDateChange={handleDateChange} />
           <WindowsList selectedDayDate={selectedDayDate} />
         </div>

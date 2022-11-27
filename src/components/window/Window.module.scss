@@ -1,8 +1,8 @@
 .window {
-  background-color: rgba(0, 0, 0, 0.5);
   height: 200px;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 
   .day {
     position: absolute;
@@ -24,7 +24,7 @@
       left: -10%;
       width: 60%;
       height: 200%;
-      background-color: brown;
+      background-color: rgb(32, 32, 111);
       transform: translateX(0) rotate(-20deg);
       transition: transform 0.5s ease;
     }
@@ -35,7 +35,7 @@
       position: absolute;
       width: 60%;
       height: 200%;
-      background-color: brown;
+      background-color: rgb(32, 32, 111);
       transition: transform 0.5s ease;
     }
   }
@@ -48,8 +48,8 @@
   .close-window {
     color: #fff;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 5px;
+    top: 5px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 5px;
@@ -64,8 +64,8 @@
   .view-content {
     color: #fff;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 5px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 5px;
