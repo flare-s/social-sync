@@ -1,6 +1,7 @@
 import windowStyles from "./Window.module.scss";
 import LockStyles from "./Lock.module.scss";
 import React, { useRef } from "react";
+import WindowContent from "./WindowContent";
 
 const Window = ({ windowObj, setWindows, selectedDayDate }) => {
   const video = useRef();
@@ -57,32 +58,11 @@ const Window = ({ windowObj, setWindows, selectedDayDate }) => {
         <span>{windowObj.day}</span>
       </div>
       <div>
-        {windowObj.type === "image" && (
-          <div>
-            <button
-              className={windowStyles["close-window"]}
-              aria-label="Close window"
-              onClick={(e) => closeWindow(e, windowObj.id)}
-            >
-              <span aria-hidden>X</span>
-            </button>
-            <img src={windowObj.source} alt="" />
-          </div>
-        )}
-        {windowObj.type === "video" && (
-          <div>
-            <button
-              className={`${windowStyles["close-window"]} video-btn`}
-              aria-label="Close window"
-              onClick={(e) => closeWindow(e, windowObj.id)}
-            >
-              <span aria-hidden>X</span>
-            </button>
-            <video src={windowObj.source} width="100%" controls ref={video}>
-              sorry, your browser doesn't support embedded video
-            </video>
-          </div>
-        )}
+        <WindowContent
+          closeWindow={closeWindow}
+          video={video}
+          windowObj={windowObj}
+        />
       </div>
     </li>
   );
