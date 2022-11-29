@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/social-sync/static/css/main.169ffb2e.css",
+    "main.js": "/social-sync/static/js/main.c462a9bb.js",
+    "index.html": "/social-sync/index.html",
+    "main.169ffb2e.css.map": "/social-sync/static/css/main.169ffb2e.css.map",
+    "main.c462a9bb.js.map": "/social-sync/static/js/main.c462a9bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169ffb2e.css",
+    "static/js/main.c462a9bb.js"
+  ]
+}
