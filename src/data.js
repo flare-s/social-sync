@@ -18,7 +18,7 @@ const windowsArray = [
   {
     id: "window-3",
     day: 3,
-    source: "/images/2.jpg",
+    source: "images/2.jpg",
     text: "Day 3",
     open: false,
     type: "image",
@@ -34,7 +34,7 @@ const windowsArray = [
   {
     id: "window-5",
     day: 5,
-    source: "/images/3.jpg",
+    source: "images/3.jpg",
     text: "Day 5",
     open: false,
     type: "image",
@@ -50,7 +50,7 @@ const windowsArray = [
   {
     id: "window-7",
     day: 7,
-    source: "/images/4.jpg",
+    source: "images/4.jpg",
     text: "Day 7",
     open: false,
     type: "image",
@@ -66,7 +66,7 @@ const windowsArray = [
   {
     id: "window-9",
     day: 9,
-    source: "/images/5.jpg",
+    source: "images/5.jpg",
     text: "day 9",
     open: false,
     type: "image",
@@ -82,7 +82,7 @@ const windowsArray = [
   {
     id: "window-11",
     day: 11,
-    source: "/images/6.jpg",
+    source: "images/6.jpg",
     text: "day 11",
     open: false,
     type: "image",
@@ -98,7 +98,7 @@ const windowsArray = [
   {
     id: "window-13",
     day: 13,
-    source: "/images/7.jpg",
+    source: "images/7.jpg",
     text: "day 13",
     open: false,
     type: "image",
@@ -114,7 +114,7 @@ const windowsArray = [
   {
     id: "window-15",
     day: 15,
-    source: "/images/8.jpg",
+    source: "images/8.jpg",
     text: "day 15",
     open: false,
     type: "image",
@@ -130,7 +130,7 @@ const windowsArray = [
   {
     id: "window-17",
     day: 17,
-    source: "/images/9.jpg",
+    source: "images/9.jpg",
     text: "day 17",
     open: false,
     type: "image",
@@ -146,7 +146,7 @@ const windowsArray = [
   {
     id: "window-19",
     day: 19,
-    source: "/images/10.jpg",
+    source: "images/10.jpg",
     text: "day 19",
     open: false,
     type: "image",
@@ -162,7 +162,7 @@ const windowsArray = [
   {
     id: "window-21",
     day: 21,
-    source: "/images/11.jpg",
+    source: "images/11.jpg",
     text: "day 21",
     open: false,
     type: "image",
@@ -178,7 +178,7 @@ const windowsArray = [
   {
     id: "window-23",
     day: 23,
-    source: "/images/12.jpg",
+    source: "images/12.jpg",
     text: "day 23",
     open: false,
     type: "image",
@@ -194,7 +194,7 @@ const windowsArray = [
   {
     id: "window-25",
     day: 25,
-    source: "/images/7.jpg",
+    source: "images/7.jpg",
     text: "day 24",
     open: false,
     type: "image",
